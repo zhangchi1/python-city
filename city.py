@@ -3,7 +3,7 @@ from leisure.leisure import draw_leisure
 from outdoors.outdoors import draw_outdoors
 from education.education import draw_education
 from infrastructure.road import draw_road
-
+from safety.firestation import draw_firestation
 def draw_city():
     draw_safety()
     draw_road(2,'vertical')
@@ -12,5 +12,6 @@ def draw_city():
     draw_outdoors()
     draw_road(2,'vertical')
     draw_education()
+    draw_firestation()
+    draw_firestation(40)
     return
-draw_city()
